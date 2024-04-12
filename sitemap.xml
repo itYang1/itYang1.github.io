@@ -2,9 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://ityang1.github.io/mainifest.json</loc>
+    <loc>https://ityang1.github.io/posts/7f9c52dd.html</loc>
     
-    <lastmod>2024-04-01</lastmod>
+    <lastmod>2024-04-12</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://ityang1.github.io/manifest.json</loc>
+    
+    <lastmod>2024-04-02</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,7 +40,7 @@
 
   <url>
     <loc>https://ityang1.github.io/</loc>
-    <lastmod>2024-04-02</lastmod>
+    <lastmod>2024-04-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -39,7 +48,7 @@
   
   <url>
     <loc>https://ityang1.github.io/tags/IT/</loc>
-    <lastmod>2024-04-02</lastmod>
+    <lastmod>2024-04-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
