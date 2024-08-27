@@ -1,0 +1,188 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 生活精彩.万物可爱
+subtitle: "多读书"
+description: ""
+keywords:
+author: Miss.Yang
+language: zh-CN
+timezone: "Asia/Shanghai"
+
+# Header
+header:
+  enable: true
+  title: "欢迎来到我的博客"
+  subtitle: "这里有各种编程相关的知识"
+  text: "这里是封面文本，可以是任何你想展示的描述。"
+  image: "/images/header.jpg" # 确保图片路径正确
+
+# URL
+## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
+url: https://itYang1.github.io
+permalink: posts/:abbrlink.html
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
+  trailing_html: true # Set to false to remove trailing '.html' from permalinks
+
+# 目录设置
+source_dir: source # 源文件目录
+public_dir: publics # 公共输出目录
+tag_dir: tags # 标签页目录
+archive_dir: archives # 存档目录
+category_dir: categories # 分类目录
+code_dir: downloads/code # 代码目录
+i18n_dir: :lang # 国际化目录
+skip_render: # 跳过渲染的文件列表
+
+# 写作设置
+new_post_name: :title.md # 新文章的文件名格式
+default_layout: post # 默认布局
+titlecase: true # 将标题转换为 titlecase
+external_link:
+  enable: true # 在新标签页中打开外部链接
+  field: site # 应用于整个站点
+  exclude: "" # 排除的链接字段
+filename_case: 0 # 文件名大小写（0: 不变, 1: 小写, 2: 大写）
+render_drafts: false # 渲染草稿
+post_asset_folder: false # 启用文章资源文件夹(t通过hexo new  page 创建同名的文件和文件夹)
+marked:
+  prependRoot: true # 将相对链接转换为绝对链接
+  postAsset: true # 允许在文章中嵌套文件
+relative_link: false # 使用相对链接
+future: true # 渲染未来的文章
+highlight:
+  enable: true # 启用代码高亮
+  line_number: true # 显示行号
+  auto_detect: false # 自动检测代码语言
+  tab_replace: "" # 替换制表符的字符串
+  wrap: true # 是否包裹代码块
+  hljs: false # 使用 hljs 替代默认高亮引擎
+prismjs:
+  enable: false # 启用 Prism.js
+  preprocess: true # 在渲染之前处理代码块
+  line_number: true # 显示行号
+  tab_replace: "" # 替换制表符的字符串
+# 首页设置
+index_generator:
+  path: "" # 博客首页的根路径（默认 = ''）
+  per_page: 10 # 每页显示的文章数量（0 = 禁用分页）
+  order_by: -date # 文章排序方式（默认按日期降序排列）
+
+# Category & Tag
+# 分类与标签
+default_category: uncategorized # 默认分类
+category_map: # 分类映射
+tag_map: # 标签映射
+moods_map: # 分类映射
+
+# Metadata elements
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true # 自动生成 meta 标签
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+# 日期/时间格式
+## Hexo 使用 Moment.js 解析和显示日期
+## 你可以根据 http://momentjs.com/docs/#/displaying/format/ 定制日期格式
+date_format: YYYY-MM-DD # 日期格式
+time_format: HH:mm:ss # 时间格式
+updated_option: "mtime" # 文章更新时间选项（'mtime', 'date', 'empty'）
+
+# Pagination
+## Set per_page to 0 to disable pagination
+# 分页
+## 将 per_page 设置为 0 以禁用分页
+per_page: 10
+pagination_dir: page
+
+# Include / Exclude file(s)
+## include:/exclude: options only apply to the 'source/' folder
+# 包含/排除文件
+## include:/exclude: 选项仅适用于 'source/' 文件夹
+include:
+  - ".nojekyll" # 包含的文件列表
+exclude:
+  # 不处理 'source/js/test.js'
+  - "js/test.js"
+  # 不处理 'source/js/' 中的文件、但包括子目录下的所有目录和文件
+  - "js/*"
+  # 不处理 'source/js/' 中的文件和子目录下的任何文件
+  - "js/**/*"
+  # 不处理 'source/js/' 目录下的所有文件名以 'test' 开头的文件，但包括其它文件和子目录下的单文件
+  - "js/test*"
+  # 不处理 'source/js/' 及其子目录中任何以 'test' 开头的文件
+  - "js/**/test*"
+  # 不要用 exclude 来忽略 'source/_posts/' 中的文件。你应该使用 'skip_render'，或者在要忽略的文件的文件名之前加一个下划线 '_'
+  # 在这里配置一个 - "_posts/hello-world.md" 是没有用的。
+  # 排除的文件列表
+ignore:
+  # 忽略任何一个名叫 'foo' 的文件夹
+  - "**/foo"
+  # 只忽略 'themes/' 下的 'foo' 文件夹
+  - "**/themes/*/foo"
+  # 对 'themes/' 目录下的每个文件夹中忽略名叫 'foo' 的子文件夹
+  - "**/themes/**/foo"
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: butterfly
+
+# Deployment
+## Docs: https://hexo.io/docs/one-command-deployment
+deploy:
+  type: git
+  repo: https://github.com/itYang1/itYang1.github.io.git
+  branch: main
+
+  # abbrlink config
+abbrlink:
+  alg: crc32 #support crc16(default) and crc32
+  rep: hex #support dec(default) and hex
+  search:
+  path: search.xml
+  field: ALL
+  content: true
+
+  # ----------------------------
+  # Live2D
+live2d:
+  enable: true #开关插件版看板娘
+  scriptFrom: local # 默认
+  # pluginRootPath: live2dw/ # 插件在站点上的根目录(相对路径)
+  # pluginJsPath: lib/ # 脚本文件相对与插件根目录路径
+  # pluginModelPath: assets/ # 模型文件相对与插件根目录路径
+  # scriptFrom: jsdelivr # jsdelivr CDN
+  # scriptFrom: unpkg # unpkg CDN
+  # scriptFrom: https://npm.elemecdn.com/live2d-widget@3.x/lib/L2Dwidget.min.js # 你的自定义 url
+  tagMode: false # 标签模式, 是否仅替换 live2d tag标签而非插入到所有页面中
+  debug: false # 调试, 是否在控制台输出日志
+  model:
+    use: live2d-widget-model-koharu # 路径
+  display:
+    position: left #控制看板娘位置
+    width: 150 #控制看板娘大小
+    height: 300 #控制看板娘大小
+  mobile:
+    show: true # 手机中是否展示
+
+sitemap:
+  path: sitemap.xml
+  rel: filename_case
+  tags: true
+  categories: true
+
+baidusitemap:
+  path: baidusitemap.xml
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+ess: /atom.xml
