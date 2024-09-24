@@ -22,7 +22,7 @@ header:
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: https://itYang1.github.io
-permalink: posts/:abbrlink.html
+permalink: :year/:month/:day/:category/:id/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -30,7 +30,7 @@ pretty_urls:
 
 # 目录设置
 source_dir: source # 源文件目录
-public_dir: publics # 公共输出目录
+public_dir: public # 公共输出目录
 tag_dir: tags # 标签页目录
 archive_dir: archives # 存档目录
 category_dir: categories # 分类目录
