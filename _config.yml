@@ -33,7 +33,7 @@ source_dir: source # 源文件目录
 public_dir: public # 公共输出目录
 tag_dir: tags # 标签页目录
 archive_dir: archives # 存档目录
-category_dir: categories # 分类目录
+category_dir: lifeDaily # 分类目录
 code_dir: downloads/code # 代码目录
 i18n_dir: :lang # 国际化目录
 skip_render: # 跳过渲染的文件列表
@@ -76,7 +76,8 @@ index_generator:
 # 分类与标签
 default_category: uncategorized # 默认分类
 category_map: # 分类映射
-tag_map: # 标签映射
+tag_map: 
+  楼市分析: realestate# 标签映射
 moods_map: # 分类映射
 
 # Metadata elements
@@ -149,6 +150,13 @@ abbrlink:
   path: search.xml
   field: ALL
   content: true
+
+#站内搜索
+search:
+   path: search.xml
+   field: post
+   format: html
+   limit: 10000
 
   # ----------------------------
   # Live2D

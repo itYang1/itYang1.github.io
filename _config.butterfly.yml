@@ -3,16 +3,21 @@
 # --------------------------------------
 # 页面头部标题图标
 nav:
-  logo: /tabImg/女孩工作.png
+  logo: /image/女孩工作.png
   display_title: true #是否展示网站标题，填寫 true 或者 false
   fixed: true #是否固定狀態欄
 
 # Menu 目錄
 menu:
   首页: / || fas fa-home
-  生活日常|| fas fa-folder-open: 
-    碎碎念: /dailyLife/ ||fas fa-summary
-    朋友圈: /lifeSharing/ ||fas fa-summary
+  生活日常 ||fas-solid fa-crown:
+    碎碎念: /dailyLife/ ||fas fa-chart-line
+    朋友圈: https://blog.csdn.net/m0_63398413/article/details/137920144 ||fas fa-summary
+  其他 ||fas-solid fa-crown:
+    Archives: /archives/ || fas fa-archive
+    Categories: /lifeDaily/ || fas fa-folder-open
+  # Tags: /tags/ || fas fa-tags
+  # 
   # 工作总结: /Moods/ || fas fa-Moods
   # Archives: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
@@ -53,11 +58,11 @@ social:
 # --------------------------------------
 
 # Favicon（網站圖標）
-favicon: /tabImg/女孩喝咖啡.png
+favicon: /image/女孩喝咖啡.png
 
 # Avatar (頭像)
 avatar:
-  img: /tabImg/头像.png
+  img: /image/myAvatar.jpg
   # 头像是否一直旋转
   effect: false
 
@@ -119,8 +124,8 @@ cover:
 
 # Replace Broken Images (替換無法顯示的圖片)
 error_img:
-  flink: /img/friend_404.gif
-  post_page: /img/404.jpg
+  flink: /image/friend_404.gif
+  post_page: /image/404.jpg
 
 # A simple 404 page
 error_404:
@@ -206,10 +211,10 @@ reward:
   enable: true
   text:
   QR_code:
-    - img: /tabImg/wechat.png
+    - img: /image/wechat.png
     #   link:
     #   text: wechat
-    # - img: /img/alipay.jpg
+    # - img: /image/alipay.jpg
     #   link:
     #   text: alipay
 
@@ -418,7 +423,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # Preload the search data when the page loads.
   preload: false
   # Show top n results per article, show all results by setting to -1

@@ -1,3 +1,15 @@
+menu:
+  home: Home
+  archives: Archives
+  categories: Categories
+  tags: Tags
+  about: About
+  search: Search
+  schedule: Schedule
+  sitemap: Sitemap
+  commonweal: Commonweal 404
+  realestate: 楼市分析
+
 footer:
   framework: 框架
   theme: 主题

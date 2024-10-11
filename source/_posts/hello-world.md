@@ -1,7 +1,7 @@
 ---
 title: Hello World
-top_img: /tabImg/头像.png
-cover: /tabImg/宠物笑脸.png
+top_img: /image/头像.png
+cover: /image/宠物笑脸.png
 description: 新增的页面
 copyright_author: xxxx
 copyright_author_href: 'https://xxxxxx.com'
